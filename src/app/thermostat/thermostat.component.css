@@ -1,0 +1,12 @@
+svg {
+    display: block;
+    margin: auto;
+  }
+  
+  .value-label {
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+  }

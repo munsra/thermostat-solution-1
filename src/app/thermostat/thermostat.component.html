@@ -1,0 +1,16 @@
+<svg width="200" height="200">
+    <!-- This is the thermostat circle -->
+    <circle cx="100" cy="100" r="90" stroke="black" stroke-width="4" fill="none" />
+
+    <!-- This line rappresents the min value -->
+    <line x1="0" y1="200" x2="35" y2="165" stroke="green" stroke-width="2" />
+
+    <!-- This line rappresents the max value -->
+    <line x1="165" y1="165" x2="200" y2="200" stroke="red" stroke-width="2" />
+
+    <!-- This line rappresents the target value -->
+    <line x1="100" y1="100" x2="100" y2="10" [attr.transform]="'rotate(' + targetAngle + ' 100 100)'" stroke="blue"
+        stroke-width="2" />
+</svg>
+<!-- Display the current target value -->
+<div class="value-label">{{ value }}°</div>
